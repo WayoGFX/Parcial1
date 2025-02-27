@@ -1,0 +1,26 @@
+﻿@model Parcial1.Models.Rand
+
+@{
+    ViewData["Title"] = "Generar random";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Generar número random</h1>
+
+    <form asp-controller="Rand" asp-action="RandomGenerador">
+
+        <label>Generar número random</label>
+        <br>
+        <label>Haz click en el botón para generar un número random</label>
+        <br>
+        <input type="submit" value="Generar número random">
+
+    </form>
+
+    <td>@Html.DisplayNameFor(model => model.ResultRandom)</td>
+    <td>@Html.DisplayTextFor(model => model.ResultRandom)</td>
+
+    <br><br><br><br><br>
+    <p>Eduardo Enrique Rodríguez Rodríguez | 240055 <br> Tec.Desarrollo de Software | PARCIAL PROGRAMACION III</p>
+
+</div>

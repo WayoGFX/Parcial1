@@ -1,0 +1,27 @@
+﻿@model Parcial1.Models.Caida
+
+@{
+    ViewData["Title"] = "Calcular caída";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Calcular caída de dato</h1>
+
+    <form asp-controller="Caida" asp-action="CaidaCalcular">
+
+        <label>Calcular caída de dato</label>
+        <br>
+        <label>Ingrese la altura (el dato será recibido en metros)</label>
+        <input asp-for="Dato">
+        <br>
+        <input type="submit" value="CaidaCalcular">
+
+    </form>
+
+    <td>@Html.DisplayNameFor(model => model.Result)</td>
+    <td>@Html.DisplayTextFor(model => model.Result)</td>
+
+    <br><br><br><br><br>
+    <p>Eduardo Enrique Rodríguez Rodríguez | 240055 <br> Tec.Desarrollo de Software | PARCIAL PROGRAMACION III</p>
+
+</div>
