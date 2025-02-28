@@ -5,22 +5,21 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Generar número random</h1>
+    <h1>Generar número random</h1>
 
     <form asp-controller="Rand" asp-action="RandomGenerador">
-
-        <label>Generar número random</label>
-        <br>
-        <label>Haz click en el botón para generar un número random</label>
-        <br>
-        <input type="submit" value="Generar número random">
+        <label class="text-muted">Haz click en el botón para generar un número random</label>
+        <br><br>
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/19/19/dice-1294902_1280.png" class="img-thumbnail" style="width:80px;" alt="Dado" />
+        <br><br>
+        <input type="submit" value="Generar número random" class="btn btn-primary">
 
     </form>
-
-    <td>@Html.DisplayNameFor(model => model.ResultRandom)</td>
-    <td>@Html.DisplayTextFor(model => model.ResultRandom)</td>
+    <br>
+    <td class="h6">@Html.DisplayNameFor(model => model.ResultRandom)</td>
+    <td class="h6"> <b class="h5">@Html.DisplayTextFor(model => model.ResultRandom)</b></td>
 
     <br><br><br><br><br>
-    <p>Eduardo Enrique Rodríguez Rodríguez | 240055 <br> Tec.Desarrollo de Software | PARCIAL PROGRAMACION III</p>
+    <p class="lead"><b>Eduardo Enrique Rodríguez Rodríguez | 240055 </b><br> Tec.Desarrollo de Software | PARCIAL PROGRAMACION III</p>
 
 </div>
