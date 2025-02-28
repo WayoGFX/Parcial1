@@ -11,5 +11,6 @@ namespace Parcial1.Models
         // resultado
         [Display(Name = "Su caída es de: ")]
         public string Result { get; set; }
+        // Probando actualizacion
     }
 }
